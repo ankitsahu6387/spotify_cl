@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="./img/logo.png">
+  <title>Spotify - Web Player: Music for everyone</title>
+  <link rel="stylesheet" href="spotifystyles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="main">
+    <div class="sidebar">
+      <div class="nav">
+        <div class="nav-option">
+          <i class="fa-solid fa-house"></i>
+          <a href="#">Home</a>
+        </div>
+        <div class="nav-option">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a href="#">Search</a>
+        </div>
+      </div>
+      <div class="library">
+        <div class="options">
+          <div class="lib-option nav-option">
+            <img src="./img/library_icon.png">
+            <a href="#">Your Library</a>
+          </div>
+          <div class="icons">
+            <i class="fa-solid fa-plus point"></i>
+            <i class="fa-solid fa-arrow-right point"></i>
+          </div>
+        </div>
+        <div class="lib-box">
+          <div class="box">
+            <p class="box-p1">Create your first playlist</p>
+            <p class="box-p2">It's easy, we'll help you</p>
+            <button class="badge point">Create playlist</button>
+          </div>
+          <div class="box">
+            <p class="box-p1">Let's find some podcast to follow</p>
+            <p class="box-p2">We'll keep you updated on new episodes</p>
+            <button class="badge point">Browse podcast</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="sticky-nav">
+        <div class="sticky-nav-icons">
+          <i class="fa-solid fa-chevron-left point"></i>       
+          <i class="fa-solid fa-chevron-right point hide"></i>
+        </div>
+        <div class="sticky-nav-options">
+          <!-- my profile -->
+          <a href="#" class="me" ><img class="me" src="/img/Ankit.jpg"></a>
+
+          <button class="badge point hide">Explore Premium</button>
+          <button class="badge point" id="install"><i class="fa-regular fa-circle-down"></i>Install App</button>          
+          <i class="fa-regular fa-user point" id="user-profile"></i>
+          
+        </div> 
+      </div>
+        
+      <h2>Recently Played</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="img/card1img.jpeg" class="card-img">
+          <p class="card-title">Top 50 - Global</p>
+          <p class="card-info">Your daily update of the most played tracks...</p>          
+        </div>
+      </div>
+
+      <h2>Trending now near you</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="img/card2img.jpeg" class="card-img">
+          <p class="card-title">Best Bollywood</p>
+          <p class="card-info">Most popular from Bollywood</p>          
+        </div>
+
+        <div class="card">
+          <img src="img/vishal.jpeg" class="card-img">
+          <p class="card-title">Vishal Mishra</p>
+          <p class="card-info">Best from Vishal Mishra album</p>          
+        </div>
+
+        <div class="card">
+          <img src="img/card4img.jpeg" class="card-img">
+          <p class="card-title">Best South Indian</p>
+          <p class="card-info">Tollywood songs</p>          
+        </div>
+
+        <div class="card">
+          <img src="img/arijit.jpeg" class="card-img">
+          <p class="card-title">Arijit Singh</p>
+          <p class="card-info">Arijit Singh most popular songs</p>          
+        </div>
+
+        <div class="card">
+          <img src="img/card3img.jpeg" class="card-img">
+          <p class="card-title">Silent Ocean</p>
+          <p class="card-info">Your daily update of the most played tracks...</p>          
+        </div>
+
+        <div class="card">
+          <img src="img/uditB.jpeg" class="card-img">
+          <p class="card-title">Best from Udit Narayan</p>
+          <p class="card-info">Old song album</p>          
+        </div>
+
+      </div>    
+      
+      <h2>Featured Charts</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="img/card5img.jpeg" class="card-img">
+          <p class="card-title">Top Global Songs</p>
+          <p class="card-info">Your daily update of the most played tracks...</p>          
+        </div>
+        <div class="card">
+          <img src="img/card6img.jpeg" class="card-img">
+          <p class="card-title">Top Indian songs</p>
+          <p class="card-info">Your daily update of the most played tracks...</p>          
+        </div>
+        <div class="card">
+          <img src="img/card1img.jpeg" class="card-img">
+          <p class="card-title">Top 50 - Global</p>
+          <p class="card-info">Your daily update of the most played tracks...</p>          
+        </div>
+
+      </div>
+      <div class="footer">
+        <div class="line"></div>
+      </div>
+    </div>
+    
+    
+    <div class="music-player">
+      
+      <div class="album">
+        <div class="album-img"><img src="/img/pahle bhi.jpg" alt="Album"></div>
+        <div class="song-name"><p>Pehle bhi main</p></div>
+        <div class="singer-name"><p>Arijit Singh</p></div>
+      </div>
+      
+      <div class="player">
+        <div class="player-controls">
+          <img src="/img/player_icon1.png" class="player-control-icon">
+          <img src="/img/player_icon2.png" class="player-control-icon">
+          <span><img src="/img/player_icon3.png" class="player-control-icon play-button" ></span>
+          <img src="/img/player_icon4.png" class="player-control-icon">
+          <img src="/img/player_icon5.png" class="player-control-icon">
+        </div>
+        <div class="playback-bar">
+          <span class="curr-time">00:00</span>
+          <input type="range" min="0" max="100" class="progress-bar" step="1">
+          <span class="tot-time">3:32</span>
+        </div>        
+      </div>
+
+      <div class="control">
+        <i class="fa-solid fa-volume-high volume-icon"><input type="range" min="0" max="100" class="volume-bar" step="1"></i>        
+      </div>
+        
+    </div>
+  </div>
+</body>
+</html>
